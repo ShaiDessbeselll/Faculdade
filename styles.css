@@ -1,0 +1,289 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BASE */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #cda6a6;
+  line-height: 1.6;
+}
+
+/* CABEÇALHO */
+.cabecalho {
+  background-color: #222;
+  color: #fff;
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navegacao {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo-titulo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logo {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+.titulo-site {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Menu de navegação */
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu li a:hover {
+  color: #00c3ff;
+}
+
+/* HERO SECTION */
+.hero-section {
+  background: linear-gradient(to right, #4f46e5, #3b82f6);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: white;
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #e0e7ff;
+}
+
+/* BENEFÍCIOS */
+#beneficios {
+  padding: 60px 20px;
+  background-color: #f3f4f6;
+  text-align: center;
+}
+
+#beneficios h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #222;
+}
+
+.beneficios {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.beneficios-item {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  max-width: 250px;
+  flex: 1 1 250px;
+  transition: transform 0.3s;
+}
+
+.beneficios-item:hover {
+  transform: translateY(-10px);
+}
+
+.beneficios-item i {
+  color: #3b82f6;
+  margin-bottom: 15px;
+}
+
+.beneficios-item h3 {
+  margin-bottom: 10px;
+  font-size: 1.25rem;
+}
+
+.beneficios-item p {
+  font-size: 1rem;
+  color: #555;
+}
+
+/* DEPOIMENTOS */
+.testimonials-section {
+  background-color: #eef2ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.testimonials-section h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #222;
+}
+
+.testimonial-container {
+  max-width: 600px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.testimonial {
+  display: none;
+  background-color: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-style: italic;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.testimonial.active {
+  display: block;
+}
+
+.testimonial h4 {
+  margin-top: 15px;
+  font-weight: bold;
+  font-style: normal;
+  color: #3b82f6;
+}
+
+/* FORMULÁRIO */
+.form-section {
+  background-color: #f9fafb;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.form-section h2 {
+  margin-bottom: 40px;
+  font-size: 2rem;
+  color: #222;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form input {
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s;
+}
+
+form input:focus {
+  border-color: #3b82f6;
+  outline: none;
+}
+
+form button {
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 6px;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #2563eb;
+}
+
+/* RODAPÉ */
+.site-footer {
+  background-color: #1f2937;
+  color: #f9fafb;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  color: #f9fafb;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #60a5fa;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .beneficios {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .beneficios-item {
+    max-width: 100%;
+  }
+}
